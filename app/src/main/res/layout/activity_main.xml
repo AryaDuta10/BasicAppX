@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
-    android:background="@color/viewBgColor">
+    android:background="@color/viewBgColor"
+    >
 
     <TextView
         android:id="@+id/myTextView1"
@@ -17,7 +17,8 @@
         android:textSize="14pt"
         android:gravity="center"
         android:fontFamily="@font/cambria"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        />
 
     <Button
         android:id="@+id/convertButton"
@@ -28,14 +29,14 @@
         android:textSize="11pt"
         android:background="@color/btnColor"
         android:fontFamily="@font/lucida"
-        android:layout_below="@id/myTextView1"/>
-
+        android:layout_below="@+id/myTextView1"
+        />
     <Space
         android:id="@+id/space1"
         android:layout_width="match_parent"
         android:layout_height="5pt"
-        android:layout_below="@id/convertButton"/>
-
+        android:layout_below="@id/convertButton"
+        />
     <LinearLayout
         android:id="@+id/child1"
         android:layout_width="match_parent"
@@ -110,7 +111,6 @@
             android:gravity="center"
             />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/child2"
         android:layout_width="match_parent"
@@ -136,7 +136,6 @@
             android:textSize="8pt"
             android:layout_gravity="center" />
     </LinearLayout>
-
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
@@ -165,7 +164,6 @@
             android:layout_height="wrap_content"
             android:text="@string/rbWeight" />
     </RadioGroup>
-
     <ImageView
         android:id="@+id/img"
         android:layout_width="89dp"
@@ -175,7 +173,6 @@
         android:layout_marginTop="11dp"
         android:layout_centerHorizontal="true"
         android:visibility="visible"/>
-
     <TableLayout
         android:id="@+id/table"
         android:layout_width="wrap_content"
@@ -203,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/cell_style"
                 android:padding="5dp"
-                android:text="0°C"
+                android:text="0Â°C"
                 />
 
             <TextView
@@ -212,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/cell_style"
                 android:padding="5dp"
-                android:text="32°F"
+                android:text="32Â°F"
                 />
 
             <TextView
@@ -303,5 +300,15 @@
                 />
         </TableRow>
     </TableLayout>
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgFormula"
+        android:src="@drawable/formula"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="1pt"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        ></ImageView>
 </RelativeLayout>
+
